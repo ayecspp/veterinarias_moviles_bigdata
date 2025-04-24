@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Veterinarias Móviles en CABA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc00;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff8c00;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .grafico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .grafico img {
+            max-width: 60%; /* Ajusté el tamaño de las imágenes */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect para los gráficos */
+        .grafico img:hover {
+            transform: scale(1.05);
+        }
+
+        .descripcion {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .grafico:hover .descripcion {
+            opacity: 1;
+        }
+
+        .grafico-container {
+            margin-top: 40px;
+        }
+
+        .grafico-container p {
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Análisis de Veterinarias Móviles en CABA</h1>
+    </header>
+
+    <div class="container">
+        <h2>1. Atenciones por Día</h2>
+        <p>Este gráfico muestra la evolución temporal de la actividad de los centros móviles a lo largo del tiempo. Permite identificar picos de actividad, como los fines de semana, y detectar tendencias generales.</p>
+        <div class="grafico">
+            <img src="atencionpordia.png" alt="Atenciones por día">
+            <div class="descripcion">Evolución temporal de atenciones</div>
+        </div>
+
+        <h2>2. Tipos de Consulta</h2>
+        <p>El gráfico de torta muestra las proporciones de los diferentes tipos de consulta realizadas en los centros veterinarios móviles. Es útil para ver qué tipo de atención es más demandada.</p>
+        <div class="grafico">
+            <img src="tipo de consulta.png" alt="Tipos de consulta">
+            <div class="descripcion">Distribución de tipos de consulta</div>
+        </div>
+
+        <h2>3. Horarios Exactos</h2>
+        <p>Este gráfico de torta ayuda a visualizar los horarios más comunes en los que los centros prestan atención. La información puede ser útil para ajustar la disponibilidad de los servicios.</p>
+        <div class="grafico">
+            <img src="output.png" alt="Horarios de atención">
+            <div class="descripcion">Distribución de horarios de atención</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p> Análisis de Centros Veterinarios Móviles - CABA</p>
+    </footer>
+</body>
+</html>
